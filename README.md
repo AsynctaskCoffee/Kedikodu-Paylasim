@@ -51,3 +51,31 @@ Makronun nasıl kullanılacağını gösteren kısa bir video hazırladık. Kull
 Bu rehberi takip ederek Knight Online kalkan makrosunu kolayca kullanabilirsiniz. Herhangi bir sorunuz olursa, lütfen destek ekibimize başvurun.
 
 Keyifli oyunlar!
+
+OpenCV projeye dahil olduğu için Github yükleme limitini aşıyor.
+v1.1 ve sonrası aşağıda verilen linkten olacaktır.
+
+---
+
+### v1.1 Güncelleme Notları
+
+#### Yenilikler:
+- **Asas Pro Makro Eklendi:** Yeni makro seçeneği ile daha etkin oyun deneyimi.
+  
+#### İyileştirmeler (1920x1080):
+- **Kalkan Macro:** Kalkan kullanımı ile ilgili iyileştirmeler yapıldı.
+- **Asas Macro - TAB Kaçış Senaryosu:** Can potu ve Minor potunu aynı anda kullanabilme özelliği eklendi.
+- **Asas Macro - Ctrl Aktivasyonu:** Ctrl tuşuna basıldığında minor combo otomatik olarak devreye girer.
+- **Asas Macro - Otomatik Mana:** Gereksiz mana kullanımını azaltmak için mana otomatik basar.
+- **Asas Macro - Capslock İle Saldırı:** Capslock aktifken saldırı başlar.
+  
+#### Otomatik Duration:
+- Otomatik olarak crit duratlar ve en hızlı şekilde atağa devam eder.
+
+#### Uyumluluk:
+- Şu an için sadece 64 bit sistemlerde çalışmaktadır. Macronun düzgün çalışabilmesi için macrodaki gibi skill dizilimini yapın.
+
+#### İndirme Linki:
+[Google Drive üzerinden indir](https://drive.google.com/file/d/1c8lcTy7WP9ZpLApx9O_qAxKzozCjPbBc/view)
+
+---
