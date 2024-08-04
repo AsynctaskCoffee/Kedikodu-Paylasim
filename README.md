@@ -72,10 +72,14 @@ v1.1 ve sonrası aşağıda verilen linkten olacaktır.
 #### Otomatik Duration:
 - Otomatik olarak crit duratlar ve en hızlı şekilde atağa devam eder.
 
+### v1.2 Güncelleme Notları
+
+USKO ve tüm PVPler için uygun hale getirildi.
+
 #### Uyumluluk:
 - Şu an için sadece 64 bit sistemlerde çalışmaktadır. Macronun düzgün çalışabilmesi için macrodaki gibi skill dizilimini yapın.
 
 #### İndirme Linki:
-[Google Drive üzerinden indir](https://drive.google.com/file/d/1c8lcTy7WP9ZpLApx9O_qAxKzozCjPbBc/view)
+[Google Drive üzerinden indir](https://drive.google.com/file/d/1ZWefv15SQP7v2wksC0hfr-i9rY4u9E50/view)
 
 ---
