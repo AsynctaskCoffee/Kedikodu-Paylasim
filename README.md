@@ -76,10 +76,24 @@ v1.1 ve sonrası aşağıda verilen linkten olacaktır.
 
 USKO ve tüm PVPler için uygun hale getirildi.
 
+
+### v2.0 Güncelleme Notları
+
+v2 sürümünde gelen yenilikler şu şekildedir:
+
+- Skill barın 2, 3 ve 4 numaralı slotlarına yerleştirilen yetenekler kullanıldığında, 5. slotta bulunan yetenek (72) anında devreye girer. Bu özellik okçular için geçerlidir.
+- Aynı zamanda tıklamalı çalışan 3 ve 5'li yeni makrolar eklenmiştir.
+- Yakın dövüş (melee) için spam yapmayan, temiz ve profesyonel bir makro eklenmiştir.
+- Asas makrosunda iyileştirmeler yapılmıştır.
+- USKO için çeşitli düzenlemeler yapılmıştır.
+- Driverlarınızın kurulu olduğundan emin olun.
+
+
 #### Uyumluluk:
 - Şu an için sadece 64 bit sistemlerde çalışmaktadır. Macronun düzgün çalışabilmesi için macrodaki gibi skill dizilimini yapın.
 
 #### İndirme Linki:
-[Google Drive üzerinden indir](https://drive.google.com/file/d/1ZWefv15SQP7v2wksC0hfr-i9rY4u9E50/view)
+[Google Drive üzerinden indir v2.0](https://drive.google.com/file/d/1padhnngxlVwJiylrTQjsUAFDIfltT5Hj/view)
 
+[Google Drive üzerinden indir v1.2](https://drive.google.com/file/d/1ZWefv15SQP7v2wksC0hfr-i9rY4u9E50/view)
 ---
