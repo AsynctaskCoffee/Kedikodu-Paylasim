@@ -89,12 +89,18 @@ v2 sürümünde gelen yenilikler şu şekildedir:
 - Driverlarınızın kurulu olduğundan emin olun.
 
 
+### v2.1 Güncelleme Notları
+
+v2.1 sürümünde gelen yenilikler şu şekildedir:
+
+- Hatalar giderildi.
+
 #### Uyumluluk:
 - Şu an için sadece 64 bit sistemlerde çalışmaktadır. Macronun düzgün çalışabilmesi için macrodaki gibi skill dizilimini yapın.
 
 #### İndirme Linki:
 
-[Google Drive üzerinden indir v2.0](https://drive.google.com/file/d/1padhnngxlVwJiylrTQjsUAFDIfltT5Hj/view)
+[Google Drive üzerinden indir v2.1](https://drive.google.com/file/d/1tEkp3V23YgWi0UmxVGrpdEZSoI_tys_L/view)
 
 [Google Drive üzerinden indir v1.2](https://drive.google.com/file/d/1ZWefv15SQP7v2wksC0hfr-i9rY4u9E50/view)
 
