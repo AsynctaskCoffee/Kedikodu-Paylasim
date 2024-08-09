@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Knight Online Shield Macro Kullanım Kılavuzu</title>
+    <title>Kedikodu Knight Online Macro Kullanım Kılavuzu</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -12,6 +12,7 @@
             margin: 0;
             padding: 0;
             scroll-behavior: smooth;
+            line-height: 1.6;
         }
 
         header {
@@ -55,25 +56,31 @@
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
         }
 
-        h1, h2, h3 {
+        h1, h2, h3, h4 {
             color: #b8860b;
+        }
+
+        p {
+            margin: 1rem 0;
         }
 
         .content {
             display: flex;
             align-items: flex-start;
             margin-bottom: 50px;
+            flex-direction: column;
         }
 
         .content img {
-            width: 40%;
+            width: 100%;
             max-width: 300px;
-            margin-right: 20px;
+            margin: 0 auto 20px;
             border: 3px solid #b8860b;
         }
 
         .content p {
             flex: 1;
+            text-align: justify;
         }
 
         .video-container iframe {
@@ -152,12 +159,31 @@
         .skill-bar {
             margin-bottom: 50px;
         }
+
+        @media (min-width: 768px) {
+            .content {
+                flex-direction: row;
+            }
+
+            .content img {
+                margin-right: 20px;
+                margin-bottom: 0;
+            }
+        }
+
+        .intro {
+            margin-bottom: 40px;
+        }
+
+        .intro h2 {
+            text-align: center;
+        }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Knight Online Shield Macro Kullanım Kılavuzu</h1>
+        <h1>Kedikodu Knight Online Macro Kullanım Kılavuzu</h1>
     </header>
 
     <nav>
@@ -169,8 +195,28 @@
     </nav>
 
     <div class="container">
+        <div class="intro">
+            <h2>Genel Açıklama</h2>
+            <p>Bu kılavuz, Knight Online için geliştirilmiş özel makroların kullanımını ve kurulumunu açıklamaktadır. Özellikle, bu makro seti Knight Online'da PK sırasında maksimum performans ve verimlilik sağlayacak şekilde tasarlanmıştır. Makrolar, yalnızca abonelerimize özeldir ve sistem belleğine müdahale etmeden, tamamen görüntü işleme ve timestamp teknolojisi ile çalışır. Bu sayede, ban riski minimum düzeydedir.</p>
+
+            <h3>Kullanılan Kütüphaneler</h3>
+            <p>Bu makro setinin çalışması için bazı Python kütüphaneleri gereklidir. Gerekli kütüphaneler:</p>
+            <ul>
+                <li><strong>ctypes, os, pickle, sys, threading, time, tkinter, datetime</strong> (Python'un yerleşik kütüphaneleri)</li>
+                <li><strong>numpy</strong> (Sayısal hesaplamalar için)</li>
+                <li><strong>pyautogui</strong> (Ekran kontrolü ve otomasyon için)</li>
+                <li><strong>opencv-python</strong> (Görüntü işleme için)</li>
+                <li><strong>requests</strong> (HTTP istekleri için)</li>
+                <li><strong>Pillow</strong> (Görüntü işleme için)</li>
+                <li><strong>cryptography</strong> (Şifreleme işlemleri için)</li>
+                <li><strong>pynput</strong> (Klavye ve fare kontrolü için)</li>
+                <li><strong>pywin32</strong> (Windows API ile etkileşim için)</li>
+                <li><strong>interception</strong> (Windows tuş basma ve fare tıklama işlemleri)</li>
+            </ul>
+        </div>
+
         <div class="version">
-            Son Versiyon: v2.3 (Güncelleme Tarihi: 2024-08-09)
+            Son Versiyon: <a href="https://drive.google.com/file/d/1BmRWV8z6i1Ft9oacO0PXvL5N_FS14dh2/view">v2.3 INDIR</a> (Güncelleme Tarihi: 2024-08-09)
         </div>
 
         <section id="assasin">
@@ -178,7 +224,7 @@
             <div class="content">
                 <img src="assasin_image.png" alt="Assasin">
                 <div>
-                    <p>Assasin sınıfı için geliştirilmiş olan bu makro, Knight Online PK deneyiminizi üst seviyeye taşıyacak şekilde tasarlanmıştır. Ctrl tuşuna bastığınızda minor combo başlar, TAB tuşuna bastığınızda ise can potu ve minor basılarak kaçış için ideal bir senaryo oluşturulur. Skill dizilimini macorda gösterilen şekilde yaparak, durat seçeneği işaretlendiğinde otomatik olarak crit duratlar. Bu sayede durat itemini macrodaki slota koymanız yeterlidir.</p>
+                    <p>Assasin sınıfı için geliştirilmiş olan bu makro, Knight Online PK deneyiminizi üst seviyeye taşıyacak şekilde tasarlanmıştır. Ctrl tuşuna bastığınızda minor combo başlar, TAB tuşuna bastığınızda ise can potu ve minor basılarak kaçış için ideal bir senaryo oluşturulur. Bu tuşlara tekrar basmanız comboları durdurur. Skill dizilimini makroda gösterilen şekilde dizin, durat seçeneği işaretlendiğinde otomatik olarak crit duratlar. Duration itemini makrodaki slota koymanız yeterlidir.</p>
                     <p>Makro, yüksek performanslı bir PK deneyimi sunar ve tüm skiller optimal dizilimde sekme yapmadan tam isabetle kullanılır.</p>
                     
                     <h3>Skill Barları</h3>
@@ -186,6 +232,7 @@
                         <h4>F1</h4>
                         <table>
                             <tr>
+                                <th>Skill</th>
                                 <th>1</th>
                                 <th>2</th>
                                 <th>3</th>
@@ -199,11 +246,64 @@
                             </tr>
                             <tr>
                                 <td>Crit</td>
+                                <td>X</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
                                 <td>Eskrima</td>
                                 <td></td>
+                                <td>X</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
                                 <td>Spike</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>X</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
                                 <td>Thrust</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>X</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
                                 <td>Jab</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>X</td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -216,6 +316,7 @@
                         <h4>F2</h4>
                         <table>
                             <tr>
+                                <th>Skill</th>
                                 <th>1</th>
                                 <th>2</th>
                                 <th>3</th>
@@ -228,13 +329,66 @@
                                 <th>0</th>
                             </tr>
                             <tr>
-                                <td></td>
                                 <td>Bloody Beast</td>
+                                <td></td>
+                                <td>X</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
                                 <td>Pierce</td>
                                 <td></td>
+                                <td></td>
+                                <td>X</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
                                 <td>Cut</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>X</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
                                 <td>Stab2</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>X</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
                                 <td>Weapon Cancel</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>X</td>
+                                <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -246,6 +400,7 @@
                         <h4>F3</h4>
                         <table>
                             <tr>
+                                <th>Skill</th>
                                 <th>1</th>
                                 <th>2</th>
                                 <th>3</th>
@@ -258,12 +413,65 @@
                                 <th>0</th>
                             </tr>
                             <tr>
-                                <td></td>
                                 <td>Beast</td>
+                                <td></td>
+                                <td>X</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
                                 <td>Blinding</td>
+                                <td></td>
+                                <td></td>
+                                <td>X</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
                                 <td>Stab</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>X</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
                                 <td>Shock</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>X</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
                                 <td>Stroke</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>X</td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -290,7 +498,7 @@
             <div class="content">
                 <img src="melee_image.png" alt="Melee">
                 <div>
-                    <p>Kalkan makrosu aktif edildiğinde, önceden belirlenmiş kordinatlar kullanılır veya yeni koordinatlar belirlenebilir. Fareyi kalkanın üzerine getirip inventory'de ESC tuşuna bastığınızda o noktayı kaydeder. Sol SHIFT tuşuna basıldığında inventory açılır ve kalkan ile silah çok hızlı bir şekilde yer değiştirir. Bu işlem atak makrosu ile birlikte çalışır ve mükemmel bir uyum sağlar.</p>
+                    <p>Kalkan makrosu aktif edildiğinde, önceden belirlenmiş koordinatlar kullanılır veya yeni koordinatlar belirlenebilir. Fareyi kalkanın üzerine getirip inventory'de ESC tuşuna bastığınızda o noktayı kaydeder. Sol SHIFT tuşuna basıldığında inventory açılır ve kalkan ile silah çok hızlı bir şekilde yer değiştirir. Bu işlem atak makrosu ile birlikte çalışır ve mükemmel bir uyum sağlar.</p>
                     <p>Atak makrosu ise spam yapmadan, belirtilen skilli sekme olmadan ve her seferinde R skill (düz vuruş) ile birlikte vurarak tam optimize edilmiş bir saldırı sağlar.</p>
                 </div>
             </div>
@@ -342,13 +550,13 @@
         <section id="update-history" class="update-history">
             <h3>Güncelleme Geçmişi</h3>
             <h4>v2.3 Güncelleme Notları</h4>
-            <p>- Asas ve Melee performans ve hız problemleri üzerinde çalışmalar yapıldı.</p>
-            <p>- Otomatik kurulum için bat dosyaları eklendi (çalışmazsa yönetici olarak başlat).</p>
-            <p>- Şu an için sadece 64 bit sistemlerde çalışmaktadır. Macronun düzgün çalışabilmesi için macrodaki gibi skill dizilimini yapın.</p>
+            <p>- Assasin ve Melee performans ve hız problemleri üzerinde çalışmalar yapıldı.</p>
+            <p>- Otomatik kurulum için bat dosyaları eklendi (çalışmazsa yönetici olarak başlatın).</p>
+            <p>- Şu an için sadece 64 bit sistemlerde çalışmaktadır. Makronun düzgün çalışabilmesi için makrodaki gibi skill dizilimini yapın.</p>
             <p>- <a href="https://drive.google.com/file/d/1BmRWV8z6i1Ft9oacO0PXvL5N_FS14dh2/view">Google Drive üzerinden indir v2.3</a></p>
 
             <h4>v2.2 Güncelleme Notları</h4>
-            <p>- Otomatik driver.</p>
+            <p>- Otomatik driver güncellemeleri eklendi.</p>
 
             <h4>v2.1 Güncelleme Notları</h4>
             <p>- Hatalar giderildi.</p>
@@ -357,16 +565,16 @@
             <p>- Skill barın 2, 3 ve 4 numaralı slotlarına yerleştirilen yetenekler kullanıldığında, 5. slotta bulunan yetenek (72) anında devreye girer.</p>
             <p>- Aynı zamanda tıklamalı çalışan 3 ve 5'li yeni makrolar eklenmiştir.</p>
             <p>- Yakın dövüş (melee) için spam yapmayan, temiz ve profesyonel bir makro eklenmiştir.</p>
-            <p>- Asas makrosunda iyileştirmeler yapılmıştır.</p>
+            <p>- Assasin makrosunda iyileştirmeler yapılmıştır.</p>
             <p>- USKO için çeşitli düzenlemeler yapılmıştır.</p>
             <p>- <a href="https://drive.google.com/file/d/1ZWefv15SQP7v2wksC0hfr-i9rY4u9E50/view">Google Drive üzerinden indir v1.2</a></p>
 
             <h4>v1.2 Güncelleme Notları</h4>
-            <p>- USKO ve tüm PVPler için uygun hale getirildi.</p>
+            <p>- USKO ve tüm PVP'ler için uygun hale getirildi.</p>
 
             <h4>v1.1 Güncelleme Notları</h4>
-            <p>- Asas Pro Makro eklendi.</p>
-            <p>- Kalkan Macro iyileştirildi.</p>
+            <p>- Assasin Pro Makro eklendi.</p>
+            <p>- Kalkan Makrosu iyileştirildi.</p>
         </section>
 
         <section id="contact">
