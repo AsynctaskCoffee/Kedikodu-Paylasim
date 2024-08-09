@@ -102,12 +102,19 @@ v2.2 sürümünde gelen yenilikler şu şekildedir:
 
 - Otomatik driver.
 
+### v2.3 Güncelleme Notları
+
+v2.3 sürümünde gelen yenilikler şu şekildedir:
+
+- Asas ve Melee performans ve hız problemleri üzerinde çalışmalar yapıldı.
+- Otomatik kurulum için bat dosyaları eklendi (çalışmazsa yönetici olarak başlat.)
+
 #### Uyumluluk:
 - Şu an için sadece 64 bit sistemlerde çalışmaktadır. Macronun düzgün çalışabilmesi için macrodaki gibi skill dizilimini yapın.
 
 #### İndirme Linki:
 
-[Google Drive üzerinden indir v2.2](https://drive.google.com/file/d/1xthOxyZllRY-SltijltzYMYyXtPOA5zf/view)
+[Google Drive üzerinden indir v2.3](https://drive.google.com/file/d/1BmRWV8z6i1Ft9oacO0PXvL5N_FS14dh2/view)
 
 [Google Drive üzerinden indir v1.2](https://drive.google.com/file/d/1ZWefv15SQP7v2wksC0hfr-i9rY4u9E50/view)
 
