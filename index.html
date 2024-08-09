@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knight Online Shield Macro Kullanım Kılavuzu</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0a0a0a;
+            color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background-color: #1a1a1a;
+            border-bottom: 3px solid #b8860b;
+            padding: 20px;
+            text-align: center;
+            color: #b8860b;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #121212;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 2px solid #b8860b;
+        }
+
+        nav a {
+            color: #b8860b;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 10px;
+        }
+
+        nav a:hover {
+            background-color: #b8860b;
+            color: #0a0a0a;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 20px;
+            background: #1a1a1a;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+        }
+
+        h1, h2, h3 {
+            color: #b8860b;
+        }
+
+        .content {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 50px;
+        }
+
+        .content img {
+            width: 40%;
+            max-width: 300px;
+            margin-right: 20px;
+            border: 3px solid #b8860b;
+        }
+
+        .content p {
+            flex: 1;
+        }
+
+        .video-container iframe {
+            width: 100%;
+            height: 500px;
+            border: none;
+            margin-top: 20px;
+        }
+
+        .update-history {
+            background-color: #232323;
+            padding: 20px;
+            border-radius: 8px;
+            border: 2px solid #b8860b;
+            margin-bottom: 50px;
+        }
+
+        .update-history h3 {
+            margin-top: 0;
+        }
+
+        .manual-installation {
+            background-color: #232323;
+            padding: 20px;
+            border-radius: 8px;
+            border: 2px solid #b8860b;
+            margin-bottom: 50px;
+        }
+
+        footer {
+            background: #121212;
+            color: #b8860b;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+            border-top: 2px solid #b8860b;
+        }
+
+        .version {
+            text-align: right;
+            font-style: italic;
+            margin-bottom: 20px;
+            color: #b8860b;
+        }
+
+        #contact {
+            text-align: center;
+        }
+
+        .manual-installation h4 {
+            margin-top: 0;
+        }
+
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #b8860b;
+            padding: 8px;
+            text-align: center;
+            color: #f2f2f2;
+        }
+
+        th {
+            background-color: #b8860b;
+            color: #0a0a0a;
+        }
+
+        td {
+            background-color: #1a1a1a;
+        }
+
+        .skill-bar {
+            margin-bottom: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Knight Online Shield Macro Kullanım Kılavuzu</h1>
+    </header>
+
+    <nav>
+        <a href="#assasin">Assasin</a>
+        <a href="#archer">Archer</a>
+        <a href="#melee">Melee</a>
+        <a href="#extras">Extras</a>
+        <a href="#kurulum">Kurulum</a>
+    </nav>
+
+    <div class="container">
+        <div class="version">
+            Son Versiyon: v2.3 (Güncelleme Tarihi: 2024-08-09)
+        </div>
+
+        <section id="assasin">
+            <h2>Assasin</h2>
+            <div class="content">
+                <img src="assasin_image.jpg" alt="Assasin">
+                <div>
+                    <p>Assasin sınıfı için geliştirilmiş olan bu makro, Knight Online PK deneyiminizi üst seviyeye taşıyacak şekilde tasarlanmıştır. Ctrl tuşuna bastığınızda minor combo başlar, TAB tuşuna bastığınızda ise can potu ve minor basılarak kaçış için ideal bir senaryo oluşturulur. Skill dizilimini macorda gösterilen şekilde yaparak, durat seçeneği işaretlendiğinde otomatik olarak crit duratlar. Bu sayede durat itemini macrodaki slota koymanız yeterlidir.</p>
+                    <p>Makro, yüksek performanslı bir PK deneyimi sunar ve tüm skiller optimal dizilimde sekme yapmadan tam isabetle kullanılır.</p>
+                    
+                    <h3>Skill Barları</h3>
+                    <div class="skill-bar">
+                        <h4>F1</h4>
+                        <table>
+                            <tr>
+                                <th>1</th>
+                                <th>2</th>
+                                <th>3</th>
+                                <th>4</th>
+                                <th>5</th>
+                                <th>6</th>
+                                <th>7</th>
+                                <th>8</th>
+                                <th>9</th>
+                                <th>0</th>
+                            </tr>
+                            <tr>
+                                <td>Crit</td>
+                                <td>Eskrima</td>
+                                <td></td>
+                                <td>Spike</td>
+                                <td>Thrust</td>
+                                <td>Jab</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="skill-bar">
+                        <h4>F2</h4>
+                        <table>
+                            <tr>
+                                <th>1</th>
+                                <th>2</th>
+                                <th>3</th>
+                                <th>4</th>
+                                <th>5</th>
+                                <th>6</th>
+                                <th>7</th>
+                                <th>8</th>
+                                <th>9</th>
+                                <th>0</th>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>Bloody Beast</td>
+                                <td>Pierce</td>
+                                <td></td>
+                                <td>Cut</td>
+                                <td>Stab2</td>
+                                <td>Weapon Cancel</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="skill-bar">
+                        <h4>F3</h4>
+                        <table>
+                            <tr>
+                                <th>1</th>
+                                <th>2</th>
+                                <th>3</th>
+                                <th>4</th>
+                                <th>5</th>
+                                <th>6</th>
+                                <th>7</th>
+                                <th>8</th>
+                                <th>9</th>
+                                <th>0</th>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>Beast</td>
+                                <td>Blinding</td>
+                                <td>Stab</td>
+                                <td>Shock</td>
+                                <td>Stroke</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="archer">
+            <h2>Archer</h2>
+            <div class="content">
+                <img src="archer_image.jpg" alt="Archer">
+                <div>
+                    <p>Archer sınıfı için özel olarak optimize edilen bu makro, 3’lü ve 5’li ok kombosunu en hızlı şekilde yapmanıza olanak tanır. 72. skill işaretli olduğunda, 2., 3. ve 4. slota koyduğunuz skillerin hemen arkasından 72. skill vurulur, bu sayede aralıksız bir saldırı gücü elde edersiniz.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="melee">
+            <h2>Melee</h2>
+            <div class="content">
+                <img src="melee_image.jpg" alt="Melee">
+                <div>
+                    <p>Kalkan makrosu aktif edildiğinde, önceden belirlenmiş kordinatlar kullanılır veya yeni koordinatlar belirlenebilir. Fareyi kalkanın üzerine getirip inventory'de ESC tuşuna bastığınızda o noktayı kaydeder. Sol SHIFT tuşuna basıldığında inventory açılır ve kalkan ile silah çok hızlı bir şekilde yer değiştirir. Bu işlem atak makrosu ile birlikte çalışır ve mükemmel bir uyum sağlar.</p>
+                    <p>Atak makrosu ise spam yapmadan, belirtilen skilli sekme olmadan ve her seferinde R skill (düz vuruş) ile birlikte vurarak tam optimize edilmiş bir saldırı sağlar.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="extras">
+            <h2>Extras</h2>
+            <div class="content">
+                <img src="extras_image.jpg" alt="Extras">
+                <div>
+                    <p>Mana potunu 0’a koyarsanız, otomatik olarak mananız azaldığında 0 slottaki manaya basılır. Ayrıca, bir sorunla karşılaştığınızda LOG göster kısmında iletişim mailine logları atarsanız hatayı çözmemize yardımcı olabilirsiniz.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="kurulum">
+            <h2>Kurulum</h2>
+            <div class="manual-installation">
+                <h3>Manual Interception Kurulum</h3>
+                <h4>Önerilen Yöntem</h4>
+                <p>Önerilen yöntem, indirdiğiniz zip dosyasındaki <strong>beni_kur_önerilir.bat</strong> dosyasını yönetici olarak çalıştırmaktır. Bu dosya, Interception sürücüsünün kurulu olup olmadığını kontrol eder ve yükleme işlemini gerçekleştirir. Ayrıca, Python ve gerekli tüm kütüphaneleri de kontrol eder ve eksik olanları otomatik olarak yükler.</p>
+
+                <p><strong>BAT Dosyası Nedir?</strong></p>
+                <p>BAT dosyası, Windows işletim sisteminde kullanılan ve komut satırı işlemlerini içeren bir dosya türüdür. Bu dosyalar, bir dizi komutun sırayla çalıştırılmasını sağlar ve genellikle otomasyon görevleri için kullanılır. Bu makroda kullanılan BAT dosyaları, Interception sürücüsünü yüklemek ve Python kütüphanelerini kontrol etmek için yazılmıştır.</p>
+
+                <h4>BAT Dosyası Nasıl Çalışır?</h4>
+                <p>Önerilen BAT dosyası, sisteminizde Interception sürücüsünün kurulu olup olmadığını kontrol eder. Eğer sürücü yüklü değilse, BAT dosyası bu sürücüyü yükler. Yüklü olup olmadığını kontrol etmek için `sc query interception` komutu kullanılır. Ardından, Python ve gerekli kütüphanelerin yüklü olup olmadığını kontrol eder ve eksik olanları `pip install` komutlarıyla yükler.</p>
+
+                <h4>BAT Dosyalarını Neden Yönetici Olarak Çalıştırmalıyız?</h4>
+                <p>BAT dosyaları sistemde değişiklikler yapabileceği için, özellikle sürücü yükleme gibi işlemler gerçekleştirdiğinde, yönetici haklarına ihtiyaç duyar. Yönetici olarak çalıştırmak, dosyanın gerekli izinlere sahip olmasını sağlar ve işlemlerin başarılı bir şekilde tamamlanmasına olanak tanır.</p>
+
+                <h4>Basit Yöntem</h4>
+                <p>Eğer daha basit bir kurulum isterseniz, <strong>beni_kur.bat</strong> dosyasını yönetici olarak çalıştırabilirsiniz. Bu bat dosyası, sadece <strong>driver.exe /install</strong> komutunu çalıştırarak Interception sürücüsünü yükler.</p>
+
+                <p><strong>Not:</strong> Bu makro, bilgisayarınıza zarar vermez ve ban riski minimum düzeydedir. Makro, memory'e hiçbir şekilde müdahale etmez ve tamamen görüntü işleme ve timestamp yöntemi ile çalışır. Bu makro yalnızca abonelere özeldir ve yalnızca YouTube kanalımıza abone olan kullanıcılara sunulmaktadır.</p>
+
+                <h4>Kurulum İçin Gerekenler</h4>
+                <p>Makronun kurulumu için YouTube kullanıcı adı ve kanal ID'nizi doğru girdiğinizden emin olun. Bu bilgileri bir kere girdikten sonra sistem sizi bir gün boyunca hatırlar.</p>
+            </div>
+        </section>
+
+        <section id="videos">
+            <h2>Kedikodu-Tech YouTube Videoları</h2>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/videoseries?list=PLQxHmhKF8zfQgovdfyn2QdKScDfwQATu_" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section id="update-history" class="update-history">
+            <h3>Güncelleme Geçmişi</h3>
+            <h4>v2.3 Güncelleme Notları</h4>
+            <p>- Asas ve Melee performans ve hız problemleri üzerinde çalışmalar yapıldı.</p>
+            <p>- Otomatik kurulum için bat dosyaları eklendi (çalışmazsa yönetici olarak başlat).</p>
+            <p>- Şu an için sadece 64 bit sistemlerde çalışmaktadır. Macronun düzgün çalışabilmesi için macrodaki gibi skill dizilimini yapın.</p>
+            <p>- <a href="https://drive.google.com/file/d/1BmRWV8z6i1Ft9oacO0PXvL5N_FS14dh2/view">Google Drive üzerinden indir v2.3</a></p>
+
+            <h4>v2.2 Güncelleme Notları</h4>
+            <p>- Otomatik driver.</p>
+
+            <h4>v2.1 Güncelleme Notları</h4>
+            <p>- Hatalar giderildi.</p>
+
+            <h4>v2.0 Güncelleme Notları</h4>
+            <p>- Skill barın 2, 3 ve 4 numaralı slotlarına yerleştirilen yetenekler kullanıldığında, 5. slotta bulunan yetenek (72) anında devreye girer.</p>
+            <p>- Aynı zamanda tıklamalı çalışan 3 ve 5'li yeni makrolar eklenmiştir.</p>
+            <p>- Yakın dövüş (melee) için spam yapmayan, temiz ve profesyonel bir makro eklenmiştir.</p>
+            <p>- Asas makrosunda iyileştirmeler yapılmıştır.</p>
+            <p>- USKO için çeşitli düzenlemeler yapılmıştır.</p>
+            <p>- <a href="https://drive.google.com/file/d/1ZWefv15SQP7v2wksC0hfr-i9rY4u9E50/view">Google Drive üzerinden indir v1.2</a></p>
+
+            <h4>v1.2 Güncelleme Notları</h4>
+            <p>- USKO ve tüm PVPler için uygun hale getirildi.</p>
+
+            <h4>v1.1 Güncelleme Notları</h4>
+            <p>- Asas Pro Makro eklendi.</p>
+            <p>- Kalkan Macro iyileştirildi.</p>
+        </section>
+
+        <section id="contact">
+            <h2>İletişim</h2>
+            <p>Email: kedikodu.tech@gmail.com</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Kedikodu-Tech</p>
+    </footer>
+
+</body>
+</html>
