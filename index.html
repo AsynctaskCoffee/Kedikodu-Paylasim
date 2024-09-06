@@ -98,10 +98,6 @@
             margin-bottom: 50px;
         }
 
-        .update-history h3 {
-            margin-top: 0;
-        }
-
         .manual-installation {
             background-color: #232323;
             padding: 20px;
@@ -171,6 +167,28 @@
             }
         }
 
+        @media (max-width: 767px) {
+            nav {
+                flex-direction: column;
+            }
+
+            nav a {
+                margin-bottom: 5px;
+            }
+
+            .video-container iframe {
+                height: 300px;
+            }
+
+            table, td, th {
+                font-size: smaller;
+            }
+
+            .content {
+                flex-direction: column;
+            }
+        }
+
         .intro {
             margin-bottom: 40px;
         }
@@ -192,7 +210,7 @@
         <a href="#melee">Melee</a>
         <a href="#extras">Extras</a>
         <a href="#kurulum">Kurulum</a>
-        <a href="https://drive.google.com/file/d/1wx7z1gBadhZfqWKWFllSVqWb9vlJYrEh/view">İNDİR 2.3</a>
+        <a href="https://drive.google.com/file/d/1Z94ya_ZeAmS2PTPISkPGIUPEs4Nsdewe/view">İNDİR 2.4</a>
     </nav>
 
     <div class="container">
@@ -550,6 +568,13 @@
 
         <section id="update-history" class="update-history">
             <h3>Güncelleme Geçmişi</h3>
+
+            <h4>v2.4 Güncelleme Notları</h4>
+            <p>- Hız problemleri üzerinde çalışmalar yapıldı.</p>
+            <p>- Bazı uyarılar için detaylandırma yapıldı.</p>
+            <p>- Hız extras ekranından manual olarak ayarlanabilir hale getirildi.</p>
+            <p>- <a href="https://drive.google.com/file/d/1Z94ya_ZeAmS2PTPISkPGIUPEs4Nsdewe/view">Google Drive üzerinden indir v2.4</a></p>
+ 
             <h4>v2.3 Güncelleme Notları</h4>
             <p>- Assasin ve Melee performans ve hız problemleri üzerinde çalışmalar yapıldı.</p>
             <p>- Otomatik kurulum için bat dosyaları eklendi (çalışmazsa yönetici olarak başlatın).</p>
